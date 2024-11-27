@@ -9,10 +9,10 @@ const Sixsection = () => {
       <div className="lg:w-[55%] w-full">
         <h1 className="text-2xl sm:text-3xl font-semibold text-primary text-center lg:text-left">
           Simplifier les démarches administratives <br />
-          liées à l'importation
+          liées à l&apos;importation
         </h1>
         <p className="py-4 text-sm sm:text-base text-primary text-center lg:text-left">
-          Freegate simplifie les démarches administratives liées à l'importation en fournissant des outils et des
+          Freegate simplifie les démarches administratives liées à l&apos;importation en fournissant des outils et des
           informations pour les formalités douanières, les certifications et les licences.
         </p>
 
@@ -35,7 +35,7 @@ const Sixsection = () => {
               <strong>Documentation</strong>
             </div>
             <div className="p-4 border text-center sm:text-left">
-              Gérez facilement les documents d'importation.
+              Gérez facilement les documents d&apos;importation.
             </div>
           </div>
         </div>
@@ -44,8 +44,8 @@ const Sixsection = () => {
       {/* Section image */}
       <div className="lg:w-[40%] w-full mt-8 lg:mt-0 flex justify-center">
         <Image
-          src="/animations/Office-management-bro.svg" // Chemin vers l'image
-          alt="Illustration de commerce international"
+          src="/animations/Office-management-bro.svg"
+          alt="Illustration de gestion administrative"
           width={500}
           height={500}
           className="object-contain"

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { signIn } from "next-auth/react";
@@ -19,8 +20,10 @@ const Signin: React.FC = () => {
       if (res?.error) {
         setError("La connexion a échoué. Veuillez réessayer.");
       }
-    } catch (err) {
+    } catch (error) {
+      // Ici, on remplace 'err' par 'error' ou on supprime la variable si elle n'est pas utilisée
       setError("Une erreur inattendue s'est produite.");
+      console.log(error);
     } finally {
       setIsLoading(false);
     }

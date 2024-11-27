@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Container from "../Container";
-import Navigation from "../Navaigation";
 
 const HeroPage = () => {
   return (
@@ -12,11 +11,11 @@ const HeroPage = () => {
         <div className="w-full lg:w-[55%] text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white py-4">
             <span className="uppercase">freegate:</span> <br />
-            La plateforme web pour <br /> les professionnels <br /> de l'importation
+            La plateforme web pour <br /> les professionnels <br /> de l&apos;importation
           </h1>
           <p className="py-4 text-sm sm:text-base text-white">
-            freegate est une plateforme web conçue pour simplifier et optimiser les opérations d'importation pour les
-            professionnels. Ce dernier offre une variété de services et d'outils pour faciliter le commerce international.
+            freegate est une plateforme web conçue pour simplifier et optimiser les opérations d&apos;importation pour les
+            professionnels. Ce dernier offre une variété de services et d&apos;outils pour faciliter le commerce international.
           </p>
         </div>
 

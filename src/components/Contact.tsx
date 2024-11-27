@@ -41,11 +41,25 @@ const ContactForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-full">
-        <Link href="/" className="text-primary font-semibold p-2 bg-blue-200 rounded px-4">retour</Link>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-4 w-full"
+        aria-label="Formulaire de contact"
+      >
+        {/* Bouton de retour */}
+        <Link
+          href="/"
+          className="text-primary font-semibold p-2 bg-blue-200 rounded px-4"
+          aria-label="Retour à la page d'accueil"
+        >
+          Retour
+        </Link>
+
+        {/* Titre */}
         <h1 className="text-2xl font-semibold text-primary">
-          Contact nous plus d'informations
+          Contactez-nous pour plus d&apos;informations
         </h1>
+
         {/* Nom */}
         <FormField
           control={form.control}
@@ -110,6 +124,7 @@ const ContactForm = () => {
         <Button
           type="submit"
           className="w-full bg-primary text-white hover:bg-primary/90"
+          aria-label="Envoyer le message"
         >
           Envoyer le message
         </Button>

@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+
+import { useEffect, useState, useCallback } from "react";
 import Container from "../Container";
 import Cards from "../Card";
 import { AnnouncementData } from "@/Data/data";
@@ -21,7 +22,7 @@ const SecondeSection = () => {
   const [filteredData, setFilteredData] = useState<Product[]>(AnnouncementData);
 
   // Filtrage des produits en fonction du nom, de la catégorie et du prix
-  const filterProducts = () => {
+  const filterProducts = useCallback(() => {
     let filtered = AnnouncementData.filter((product) => {
       // Filtre par recherche de texte dans le nom ou la description
       const searchMatch =
@@ -37,18 +38,24 @@ const SecondeSection = () => {
 
     // Tri par prix
     if (priceSort === "asc") {
-      filtered = filtered.sort((a, b) => parseInt(a.Prix.replace(/\D/g, "")) - parseInt(b.Prix.replace(/\D/g, "")));
+      filtered = filtered.sort(
+        (a, b) =>
+          parseInt(a.Prix.replace(/\D/g, "")) - parseInt(b.Prix.replace(/\D/g, ""))
+      );
     } else if (priceSort === "desc") {
-      filtered = filtered.sort((a, b) => parseInt(b.Prix.replace(/\D/g, "")) - parseInt(a.Prix.replace(/\D/g, "")));
+      filtered = filtered.sort(
+        (a, b) =>
+          parseInt(b.Prix.replace(/\D/g, "")) - parseInt(a.Prix.replace(/\D/g, ""))
+      );
     }
 
     setFilteredData(filtered);
-  };
+  }, [searchQuery, selectedCategory, priceSort]);
 
   // Effectuer le filtrage à chaque changement de recherche, de catégorie ou de tri
   useEffect(() => {
     filterProducts();
-  }, [searchQuery, selectedCategory, priceSort]);
+  }, [filterProducts]);
 
   return (
     <Container className="py-6">

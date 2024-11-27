@@ -18,14 +18,14 @@ const NineSection = () => {
         <div className="text-center">
           <Image
             src="/arlington-research-Kz8nHVg_tGI-unsplash.jpg"
-            alt="assistance technique"
+            alt="Assistance technique"
             width={300}
             height={100}
             className="rounded-md mx-auto"
           />
           <h1 className="text-xl font-semibold text-primary py-2">Assistance technique</h1>
           <p className="text-primary">
-            Obtenez de l'aide pour utiliser la plateforme et résoudre les problèmes techniques.
+            Obtenez de l&apos;aide pour utiliser la plateforme et résoudre les problèmes techniques.
           </p>
         </div>
 
@@ -33,14 +33,14 @@ const NineSection = () => {
         <div className="text-center">
           <Image
             src="/tyler-franta-iusJ25iYu1c-unsplash.jpg"
-            alt="assistance technique"
+            alt="Support téléphonique"
             width={300}
             height={100}
             className="rounded-md mx-auto"
           />
           <h1 className="text-xl font-semibold text-primary py-2">Support téléphonique</h1>
           <p className="text-primary">
-            Communiquez avec l'équipe de support client par téléphone.
+            Communiquez avec l&apos;équipe de support client par téléphone.
           </p>
         </div>
 
@@ -48,14 +48,14 @@ const NineSection = () => {
         <div className="text-center">
           <Image
             src="/windows-6G6akT8biLg-unsplash.jpg"
-            alt="assistance technique"
+            alt="Chat en ligne"
             width={300}
             height={100}
             className="rounded-md mx-auto"
           />
           <h1 className="text-xl font-semibold text-primary py-2">Chat en ligne</h1>
           <p className="text-primary">
-            Bénéficiez d'une assistance instantanée via le chat en ligne.
+            Bénéficiez d&apos;une assistance instantanée via le chat en ligne.
           </p>
         </div>
       </div>

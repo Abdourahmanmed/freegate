@@ -42,15 +42,16 @@ const LetterOfCreditForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <h1 className="text-2xl font-semibold text-primary">
-          Creation d'une lettre de credit
+          Création d&apos;une lettre de crédit
         </h1>
+
         {/* Émetteur */}
         <FormField
           control={form.control}
           name="applicant"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nom de l'émetteur</FormLabel>
+              <FormLabel>Nom de l&apos;émetteur</FormLabel>
               <FormControl>
                 <Input placeholder="Nom de l'émetteur" {...field} />
               </FormControl>
@@ -114,7 +115,7 @@ const LetterOfCreditForm = () => {
           name="expiryDate"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Date d'expiration</FormLabel>
+              <FormLabel>Date d&apos;expiration</FormLabel>
               <FormControl>
                 <Input type="date" {...field} />
               </FormControl>
@@ -131,10 +132,7 @@ const LetterOfCreditForm = () => {
             <FormItem>
               <FormLabel>Description</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="Description de la lettre de crédit"
-                  {...field}
-                />
+                <Input placeholder="Description de la lettre de crédit" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

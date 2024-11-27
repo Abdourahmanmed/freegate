@@ -6,12 +6,12 @@ const FourSection = () => {
     <Container className="py-6">
       {/* Titre principal */}
       <h1 className="text-2xl sm:text-3xl font-semibold text-primary text-center lg:text-left">
-        Permettre la publication d'annonces de <br /> marchandises
+        Permettre la publication d&apos;annonces de <br /> marchandises
       </h1>
       <p className="py-4 text-sm sm:text-base text-primary text-center lg:text-left">
-        Freegate dispose d'une plateforme d'annonces de marchandises permettant aux professionnels de l'importation de
-        trouver et d'acheter des produits facilement. Les utilisateurs peuvent publier des annonces, rechercher des
-        produits et contacter les vendeurs directement.
+        Freegate dispose d&apos;une plateforme d&apos;annonces de marchandises permettant aux professionnels de
+        l&apos;importation de trouver et d&apos;acheter des produits facilement. Les utilisateurs peuvent publier des
+        annonces, rechercher des produits et contacter les vendeurs directement.
       </p>
 
       {/* Cartes d'annonces */}
@@ -19,7 +19,7 @@ const FourSection = () => {
         {/* Carte 1 : Publication d'annonces */}
         <div className="bg-blue-100 p-4 rounded-lg shadow-lg">
           <h1 className="text-lg font-semibold text-primary">
-            Publication d'annonces
+            Publication d&apos;annonces
           </h1>
           <p className="text-primary py-2 text-sm sm:text-base">
             Publiez facilement vos annonces de marchandises avec des photos et des descriptions détaillées.

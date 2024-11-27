@@ -26,7 +26,7 @@ const FiveSection = () => {
             <div>
               <h1 className="text-lg font-semibold text-primary">Transit</h1>
               <p className="text-primary text-sm sm:text-base">
-                Organisez le transport de vos marchandises des ports d'arrivée aux entrepôts.
+                Organisez le transport de vos marchandises des ports d&apos;arrivée aux entrepôts.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const FiveSection = () => {
             <div>
               <h1 className="text-lg font-semibold text-primary">Transport</h1>
               <p className="text-primary text-sm sm:text-base">
-                Choisissez parmi une variété d'options de transport pour vos marchandises.
+                Choisissez parmi une variété d&apos;options de transport pour vos marchandises.
               </p>
             </div>
           </div>

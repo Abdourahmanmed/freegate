@@ -11,7 +11,7 @@ const EightSection = () => {
           Assurer la sécurité et la traçabilité des transactions
         </h1>
         <p className="py-4 text-sm sm:text-base text-primary text-center lg:text-left">
-          Freegate met l'accent sur la sécurité et la traçabilité des
+          Freegate met l&apos;accent sur la sécurité et la traçabilité des
           transactions en utilisant des technologies de cryptage avancées et des
           protocoles de sécurité rigoureux.
         </p>
@@ -50,7 +50,7 @@ const EightSection = () => {
               <span>3</span>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold">Contrôles d'accès</h3>
+              <h3 className="text-lg sm:text-xl font-semibold">Contrôles d&apos;accès</h3>
               <p className="text-gray-300 text-sm sm:text-base">
                 Gérez les accès aux données et aux fonctionnalités en fonction des rôles des utilisateurs.
               </p>

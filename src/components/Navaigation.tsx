@@ -8,14 +8,12 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import Signin from "./Signin";
+import Link from "next/link";
 
 const Navigation = () => {
   return (
@@ -30,22 +28,22 @@ const Navigation = () => {
         {/* Liens de navigation */}
         <ul className="flex space-x-6">
           <li>
-            <a href="/" className="text-gray-700 hover:text-gray-900">
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="/Entreposage"
               className="text-gray-700 hover:text-gray-900"
             >
               Entreposage
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Contact" className="text-gray-700 hover:text-gray-900">
+            <Link href="/Contact" className="text-gray-700 hover:text-gray-900">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 

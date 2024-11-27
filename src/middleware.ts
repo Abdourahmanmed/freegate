@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import {
   public_routes,
   api_routes,
@@ -6,25 +6,31 @@ import {
   default_redirect,
 } from "@/routes";
 
-export default function middleware(req) {
+export default function middleware(req: NextRequest) {
   const { nextUrl } = req;
   const url = nextUrl.clone();
 
-  const isLoggedIn = !!req.auth; // Assurez-vous que `req.auth` est correctement défini dans votre solution d'auth.
+  // Vérifiez si l'utilisateur est connecté via une clé définie dans les cookies, headers ou autre mécanisme
+  const isLoggedIn = Boolean(req.cookies.get("auth")); // Exemple d'utilisation des cookies
   const pathname = nextUrl.pathname;
-   console.log(isLoggedIn);
 
-  // Vérifier si la route est une route API
+  console.log(`User is logged in: ${isLoggedIn}`);
+
+  // Vérifiez si la route est une route API
   const isApiRoute = pathname.startsWith(api_routes);
 
-  // Vérifier si la route est publique
+  // Vérifiez si la route est publique
   const isPublicRoute = public_routes.includes(pathname);
 
-  // Vérifier si la route est protégée
+  // Vérifiez si la route est protégée
   const isProtectedRoute = protected_routes.includes(pathname);
 
   // Autoriser les routes API
   if (isApiRoute) {
+    return NextResponse.next();
+  }
+  // Autoriser les routes public
+  if (isPublicRoute) {
     return NextResponse.next();
   }
 
@@ -32,11 +38,10 @@ export default function middleware(req) {
   if (isLoggedIn) {
     // Autoriser l'accès aux routes protégées
     if (isProtectedRoute) {
-      return null;
+      return NextResponse.next();
     }
 
     // Rediriger vers `default_redirect` si une route publique est visitée
-
     url.pathname = default_redirect;
     return NextResponse.redirect(url);
   }
