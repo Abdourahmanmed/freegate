@@ -37,9 +37,14 @@ export function MenuNavMobile() {
           </li>
           <li>
             <Link
-              href="/Entreposage"
+              href="/Annonce"
               className="text-gray-700 hover:text-gray-900"
             >
+              Annonces
+            </Link>
+          </li>
+          <li>
+            <Link href="/Entreposage" className="text-gray-700 hover:text-gray-900">
               Entreposage
             </Link>
           </li>

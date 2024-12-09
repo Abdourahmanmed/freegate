@@ -162,4 +162,28 @@ export const AnnouncementData = [
     Image: "/tyler-franta-iusJ25iYu1c-unsplash.jpg",
     Categorie: "Nourriture",
   },
+  {
+    id: 21,
+    Nom: "Huile d'olive",
+    Description: "Riche en antioxydants et en acides gras mono-insaturés, elle est prisée pour ses bienfaits santé et son goût savoureux, idéale pour la cuisine méditerranéenne.",
+    Prix: "1500 FDJ",
+    Image: "/tyler-franta-iusJ25iYu1c-unsplash.jpg",
+    Categorie: "Nourriture",
+  },
+  {
+    id: 22,
+    Nom: "Huile de tournesol",
+    Description: "Légère et polyvalente, elle est riche en vitamine E et souvent utilisée pour la cuisson ou en assaisonnement.",
+    Prix: "2000 FDJ",
+    Image: "/tyler-franta-iusJ25iYu1c-unsplash.jpg",
+    Categorie: "Nourriture",
+  },
+  {
+    id: 23,
+    Nom: "Huile d'arachide",
+    Description: "Résistante aux hautes températures, elle est idéale pour la friture grâce à son goût neutre.",
+    Prix: "3200 FDJ",
+    Image: "/tyler-franta-iusJ25iYu1c-unsplash.jpg",
+    Categorie: "Nourriture",
+  },
 ];

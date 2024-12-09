@@ -22,7 +22,7 @@ const Navigation = () => {
       <div className="hidden lg:flex items-center justify-between h-16 px-8">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <Image src="/logo.jpg" alt="Logo" width={64} height={20} />
+          <Image src="/logo.jpg" alt="Logo" width={75} height={30} />
         </div>
 
         {/* Liens de navigation */}
@@ -34,9 +34,14 @@ const Navigation = () => {
           </li>
           <li>
             <Link
-              href="/Entreposage"
+              href="/Annonce"
               className="text-gray-700 hover:text-gray-900"
             >
+              Annonces
+            </Link>
+          </li>
+          <li>
+            <Link href="/Entreposage" className="text-gray-700 hover:text-gray-900">
               Entreposage
             </Link>
           </li>
