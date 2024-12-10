@@ -18,9 +18,9 @@ const entrepots: Entrepot[] = [
     id: 1,
     nom: "Entrepôt Nord",
     adresse: "123 Rue du Nord, Ville A",
-    capacite: "5000 m²",
+      capacite: "5000 m²",
     description: "Entrepôt moderne avec température contrôlée.",
-    image: "/images/entrepot-nord.jpg", // Chemin vers l'image
+    image: "/animations/Memory-storage-bro.svg",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const entrepots: Entrepot[] = [
     adresse: "456 Avenue du Sud, Ville B",
     capacite: "7000 m²",
     description: "Entrepôt équipé pour les matériaux dangereux.",
-    image: "/images/entrepot-sud.jpg", // Chemin vers l'image
+    image: "/animations/Memory-storage-bro.svg", 
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const entrepots: Entrepot[] = [
     adresse: "789 Boulevard de l'Est, Ville C",
     capacite: "6000 m²",
     description: "Entrepôt logistique avec zones de tri avancées.",
-    image: "/images/entrepot-est.jpg", // Chemin vers l'image
+    image: "/animations/Memory-storage-bro.svg", 
   },
 ];
 
@@ -96,38 +96,107 @@ const Entreposage: React.FC = () => {
           </div>
         </section>
 
-        {/* Section sécurité */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-gray-800 mb-4">
-            Sécurité
-          </h2>
-          <p className="text-gray-600">
-            Nos entrepôts sont équipés de systèmes de surveillance 24h/24, de
-            détecteurs de fumée et de protocoles d'intervention rapide en cas
-            d'urgence.
-          </p>
-        </section>
+              {/* Section Sécurité */}
+<section className="mt-12">
+  <div className="flex items-center space-x-6">
+    <div className="w-1/2 animate-fadeInLeft">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-primary">
+        Sécurité
+      </h2>
+      <p className="text-gray-600">
+        Nos entrepôts sont équipés de systèmes de surveillance 24h/24, de
+        détecteurs de fumée et de protocoles d'intervention rapide en cas
+        d'urgence.
+      </p>
+    </div>
+    <div className="w-1/3">
+      <img
+        src="/arlington-research-Kz8nHVg_tGI-unsplash.jpg" // Remplacez par votre image
+        alt="Sécurité entrepôt"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
 
-        {/* Section logistique */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-gray-800 mb-4">
-            Logistique
-          </h2>
-          <p className="text-gray-600">
-            Nous utilisons des systèmes de gestion logistique avancés pour
-            optimiser le stockage et la distribution des marchandises.
-          </p>
-        </section>
+{/* Section Logistique */}
+<section className="mt-12">
+  <div className="flex items-center space-x-6">
+    <div className="w-1/3">
+      <img
+        src="/arlington-research-Kz8nHVg_tGI-unsplash.jpg" // Remplacez par votre image
+        alt="Logistique entrepôt"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+    <div className="w-1/2 animate-fadeInRight">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-primary">
+        Logistique
+      </h2>
+      <p className="text-gray-600">
+        Nous utilisons des systèmes de gestion logistique avancés pour
+        optimiser le stockage et la distribution des marchandises.
+      </p>
+    </div>
+  </div>
+</section>
 
-        {/* Section packing */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-primary text-gray-800 mb-4">Packing</h2>
-          <p className="text-gray-600">
-            Nos services de packing garantissent une protection maximale pour
-            vos produits avec des emballages personnalisés et des matériaux de
-            qualité supérieure.
-          </p>
-        </section>
+{/* Section Packing */}
+<section className="mt-12">
+  <div className="flex items-center space-x-6">
+    <div className="w-1/2 animate-fadeInLeft">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-primary">
+        Packing
+      </h2>
+      <p className="text-gray-600">
+        Nos services de packing garantissent une protection maximale pour
+        vos produits avec des emballages personnalisés et des matériaux de
+        qualité supérieure.
+      </p>
+    </div>
+    <div className="w-1/3">
+      <img
+        src="/arlington-research-Kz8nHVg_tGI-unsplash.jpg" // Remplacez par votre image
+            alt="Packing entrepôt"
+        className="rounded-lg shadow-lg"
+      />
+    </div>
+  </div>
+</section>
+
+{/* animations dans styles global */}
+<style jsx>{`
+        .animate-fadeInLeft {
+          animation: fadeInLeft 1s ease-in-out;
+        }
+
+        .animate-fadeInRight {
+          animation: fadeInRight 1s ease-in-out;
+        }
+
+        @keyframes fadeInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes fadeInRight {
+          from {
+            opacity: 0;
+            transform: translateX(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
+
       </main>
 
       <Footer />

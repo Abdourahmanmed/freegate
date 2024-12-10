@@ -67,11 +67,11 @@ const SecondeSection = () => {
       <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
         <div className="flex gap-4 flex-wrap">
           <input
-            type="text"
-            placeholder="Recherche"
-            className="p-2 border rounded w-full sm:w-64"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+              type="text"
+              placeholder="Recherche"
+              className="p-2 border rounded w-full sm:w-64"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
           />
           <select
             className="p-2 border rounded w-full sm:w-48"
