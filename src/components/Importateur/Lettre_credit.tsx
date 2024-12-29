@@ -41,7 +41,7 @@ const LetterOfCreditForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <h1 className="text-2xl font-semibold text-primary">
+        <h1 className="text-2xl font-semibold text-white">
           Création d&apos;une lettre de crédit
         </h1>
 
@@ -142,7 +142,7 @@ const LetterOfCreditForm = () => {
         {/* Bouton de soumission */}
         <Button
           type="submit"
-          className="w-full bg-primary text-white hover:bg-primary/90"
+          className="w-full bg-white text-primary hover:bg-white/90"
         >
           Ajouter la lettre de crédit
         </Button>

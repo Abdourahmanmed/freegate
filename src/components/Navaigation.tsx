@@ -21,8 +21,14 @@ const Navigation = () => {
       {/* Navigation pour écran large */}
       <div className="hidden lg:flex items-center justify-between h-16 px-8">
         {/* Logo */}
-        <div className="text-xl font-bold">
-          <Image src="/logo.jpg" alt="Logo" width={75} height={30} />
+        <div className="text-xl font-bold w-[75px] h-16 flex items-center">
+          <Image
+            src="/logo.jpg"
+            alt="Logo de l'application"
+            width={75}
+            height={20}
+            className="h-full object-cover"
+          />
         </div>
 
         {/* Liens de navigation */}
@@ -33,16 +39,24 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
-            <Link
-              href="/Annonce"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <Link href="/Annonce" className="text-gray-700 hover:text-gray-900">
               Annonces
             </Link>
           </li>
           <li>
-            <Link href="/Entreposage" className="text-gray-700 hover:text-gray-900">
+            <Link
+              href="/Entreposage"
+              className="text-gray-700 hover:text-gray-900"
+            >
               Entreposage
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/Lettre_credit"
+              className="text-gray-700 hover:text-gray-900"
+            >
+              Lettre credit
             </Link>
           </li>
           <li>
@@ -67,7 +81,7 @@ const Navigation = () => {
                 Veuiller se conncter pour faire une lettre credit.
               </DialogDescription>
             </DialogHeader>
-             <Signin />
+            <Signin />
           </DialogContent>
         </Dialog>
       </div>
